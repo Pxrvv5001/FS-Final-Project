@@ -1,0 +1,34 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: smart-inventory-pro-india
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3306/inventory_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Kolkata}
+    username: ${DB_USER:root}
+    password: ${DB_PASSWORD:root}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        "[format_sql]": true
+
+app:
+  invoice:
+    prefix: INV
+  auth:
+    admin-username: ${APP_ADMIN_USERNAME:admin@inventory.com}
+    admin-secret: ${APP_ADMIN_SECRET:Admin@1234}
+    user-username: ${APP_USER_USERNAME:user@inventory.com}
+    user-secret: ${APP_USER_SECRET:User@1234}
+    legacy-admin-username: ${APP_LEGACY_ADMIN_USERNAME:admin}
+    legacy-admin-secret: ${APP_LEGACY_ADMIN_SECRET:admin123}
+    legacy-user-username: ${APP_LEGACY_USER_USERNAME:user}
+    legacy-user-secret: ${APP_LEGACY_USER_SECRET:user123}
+  jwt:
+    secret: ${JWT_SECRET:smart-inventory-pro-india-dev-secret-change-me-please-1234567890}
+    expiration-minutes: ${JWT_EXP_MINUTES:60}

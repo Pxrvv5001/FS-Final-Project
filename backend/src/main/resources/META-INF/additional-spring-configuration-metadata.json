@@ -1,0 +1,59 @@
+{
+  "properties": [
+    {
+      "name": "app.invoice.prefix",
+      "type": "java.lang.String",
+      "description": "Invoice prefix used for generated invoice numbers."
+    },
+    {
+      "name": "app.auth.admin-username",
+      "type": "java.lang.String",
+      "description": "Username for demo admin login."
+    },
+    {
+      "name": "app.auth.admin-secret",
+      "type": "java.lang.String",
+      "description": "Secret for demo admin login."
+    },
+    {
+      "name": "app.auth.user-username",
+      "type": "java.lang.String",
+      "description": "Username for demo user login."
+    },
+    {
+      "name": "app.auth.user-secret",
+      "type": "java.lang.String",
+      "description": "Secret for demo user login."
+    },
+    {
+      "name": "app.auth.legacy-admin-username",
+      "type": "java.lang.String",
+      "description": "Legacy admin username accepted for backward compatibility."
+    },
+    {
+      "name": "app.auth.legacy-admin-secret",
+      "type": "java.lang.String",
+      "description": "Legacy admin secret accepted for backward compatibility."
+    },
+    {
+      "name": "app.auth.legacy-user-username",
+      "type": "java.lang.String",
+      "description": "Legacy user username accepted for backward compatibility."
+    },
+    {
+      "name": "app.auth.legacy-user-secret",
+      "type": "java.lang.String",
+      "description": "Legacy user secret accepted for backward compatibility."
+    },
+    {
+      "name": "app.jwt.secret",
+      "type": "java.lang.String",
+      "description": "JWT signing secret."
+    },
+    {
+      "name": "app.jwt.expiration-minutes",
+      "type": "java.lang.Integer",
+      "description": "JWT token lifetime in minutes."
+    }
+  ]
+}
